@@ -1,5 +1,5 @@
-
-.card{
+.product-list{
+    .card{
     &-dark{
         background-color: $primary;
         color: $white;
@@ -13,3 +13,5 @@
         padding: 0 .9375rem;
     }
 }
+}
+

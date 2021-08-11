@@ -34,8 +34,21 @@
         width: auto !important;
     }
 }
+@include media-breakpoint-up(md) { // 768px up
+    .w-md-100{
+        width: 100% !important;
+    }
+}
 
 .px-3\.75{
     padding-left: $spacer * 3.75;
     padding-right: $spacer * 3.75;
+}
+.me-3\.75{
+    margin-right: $spacer * 3.75;
+}
+
+// 中文首行縮排
+.text-indent-cn{
+    text-indent: 2em;
 }

@@ -34,7 +34,17 @@
         margin-bottom: $spacer * 5; // 20px
     }
 }
-
+.detail-link{
+    overflow: hidden;
+    &:hover{
+        .card-img{
+            transition: all .5s;
+            transform: scale(1.2);
+        }
+        
+    }
+    
+}
 .live-item{
     background-image: url(../images/live-bg.png);
     background-repeat: no-repeat;
