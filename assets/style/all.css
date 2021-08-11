@@ -16266,9 +16266,23 @@ svg {
   }
 }
 
+@media (min-width: 768px) {
+  .w-md-100 {
+    width: 100% !important;
+  }
+}
+
 .px-3\.75 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
+}
+
+.me-3\.75 {
+  margin-right: 0.9375rem;
+}
+
+.text-indent-cn {
+  text-indent: 2em;
 }
 
 .btn {
@@ -16409,6 +16423,19 @@ svg {
   margin-bottom: 1.25rem;
 }
 
+.detail-link {
+  overflow: hidden;
+}
+
+.detail-link:hover .card-img {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .live-item {
   background-image: url(../images/live-bg.png);
   background-repeat: no-repeat;
@@ -16453,18 +16480,60 @@ svg {
   color: #E31277;
 }
 
-.card-dark {
+.product-list .card-dark {
   background-color: #630834;
   color: #fff;
 }
 
-.card-light {
+.product-list .card-light {
   background-color: #fff;
   color: #630834;
 }
 
-.card-body {
+.product-list .card-body {
   padding: 0 .9375rem;
+}
+
+.ticket-type-link {
+  display: block;
+  color: #000;
+  padding: .375rem 1rem;
+}
+
+.ticket-type-link:hover {
+  color: #000;
+  border-bottom: 1px solid #E31277;
+}
+
+.ticket-type .active {
+  border-bottom: 1px solid #E31277;
+}
+
+.ticket-info {
+  height: 256px;
+}
+
+.card-img {
+  height: 256px;
+}
+
+.ticket-img {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .ticket-img::after {
+    content: '01 \A JUN \A | \A 31 \A OCT';
+    white-space: pre;
+    position: absolute;
+    top: 50%;
+    right: 13%;
+    -webkit-transform: translate(100%, -50%);
+        -ms-transform: translate(100%, -50%);
+            transform: translate(100%, -50%);
+    color: #fff;
+    font-weight: 700;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
