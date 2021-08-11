@@ -1,12 +1,12 @@
-$(function() {
-  console.log('Hello Bootstrap5');
+"use strict";
 
-  // $('.nav-link').click(function(){
+$(function () {
+  console.log('Hello Bootstrap5'); // $('.nav-link').click(function(){
   //   $('.nav .nav-link').removeClass('active');
   //   $(this).addClass('active');
   // });
-
   // swiper
+
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -19,8 +19,8 @@ $(function() {
     },
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false,
-    },
+      disableOnInteraction: false
+    }
   });
-
 });
+//# sourceMappingURL=all.js.map
