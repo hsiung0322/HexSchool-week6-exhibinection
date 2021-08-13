@@ -14,17 +14,20 @@
     height: 256px;
 }
 
-// .ticket-count::after{
-//     @include media-breakpoint-up(md){
-//         content: '';
-//         position: absolute;
-//         top: -70%;
-//         right: 0;
-//         height: 256px;
-//         width: 1px;
-//         background-color: $black;
-//     }
-// }
+.border-md-75{
+    @include media-breakpoint-up(md){
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 75%;
+            height: 100%;
+            width: 1px;
+            background-color: $black;
+        }
+    }
+}
 
 .card-img{
     height: 256px;

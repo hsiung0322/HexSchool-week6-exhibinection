@@ -7,7 +7,7 @@ $(function() {
   // });
 
   // swiper
-  var swiper = new Swiper(".mySwiper", {
+  const swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
     breakpoints: {
