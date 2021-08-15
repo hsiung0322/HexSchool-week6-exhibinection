@@ -58,7 +58,7 @@
         </div>
       <% } %>
       <!-- nav -->
-      <% if(current == 'order') { %>
+      <% if(current == 'checkout') { %>
         <!-- 不顯示 nav -->
       <% } else { %>
       <div class="nav-scroller border-top border-dark">
@@ -86,7 +86,7 @@
     <%- contents %>
 
     <!-- footer -->
-    <% if(current == 'order' || current == 'order_complete') { %>
+    <% if(current == 'checkout' || current == 'checkout_complete') { %>
       <!-- 不顯示 footer -->
     <% } else { %>
     <footer class="footer">
@@ -192,7 +192,7 @@
         </div>
         <div class="modal-footer d-flex justify-content-between">
           <p class="fs-5 text-white"><span class="me-6">小計</span>NT$1050</p>
-          <a href="order-1.html" class="btn btn-white">前往結帳</a>
+          <a href="checkout-1.html" class="btn btn-white">前往結帳</a>
         </div>
       </div>
     </div>

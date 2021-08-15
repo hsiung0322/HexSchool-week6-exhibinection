@@ -6,35 +6,9 @@
         margin-bottom: $spacer * 6; // 24px
     }
 }
-.popular{
-    &-img{
-        @include media-breakpoint-up(md){
-            width: 33.333%;
-            .card-img{
-                height: 100%;
-            }
-        }
-    }
-    .card-body{
-        @include media-breakpoint-up(md){
-            width: 50%;
-            padding: 2.5rem 0 2.5rem 1.5rem;
-        }
-    }
-    .card-footer{
-        @include media-breakpoint-up(md){
-            margin-left: 8.333%; //offset
-            width: 8.333%;
-            background-color: $light;
-            padding: 2.5rem 1.5rem 2.5rem 0;
-        }
-    }
-    .card-text{
-        font-weight: $font-weight-bold;
-        margin-bottom: $spacer * 5; // 20px
-    }
-}
+
 .detail-link{
+    display: block;
     overflow: hidden;
     &:hover{
         .card-img{

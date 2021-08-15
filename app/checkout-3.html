@@ -2,9 +2,9 @@
 title: 訂單
 layout: ./app/layout.ejs
 engine: ejs
-current: order
+current: checkout
 ---
-<div class="order wrap pt-5 pb-10">
+<div class="checkout wrap pt-5 pb-10">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
@@ -13,10 +13,10 @@ current: order
                     <div class="col-3 timeline-pointer done">
                         <p>確認訂單</p>
                     </div>
-                    <div class="col-3 timeline-pointer done active">
+                    <div class="col-3 timeline-pointer done">
                         <p>填寫訂購資訊</p>
                     </div>
-                    <div class="col-3 timeline-pointer">
+                    <div class="col-3 timeline-pointer done active">
                         <p>填寫付款資訊</p>
                     </div>
                     <div class="col-3 timeline-pointer">
@@ -27,9 +27,9 @@ current: order
         </div>
         <div class="row">
             <div class="col-12 col-lg-8 d-flex order-2 order-lg-0">
-                <!-- order list -->
-                <ul class="order-list list-unstyled">
-                    <li class="row order-item-lg align-items-center">
+                <!-- checkout list -->
+                <ul class="checkout-list list-unstyled">
+                    <li class="row checkout-item-lg align-items-center">
                         <div class="col-md-3">
                             <img src="./assets/images/popular-1.jpg" class="card-img-top" alt="popular-1">
                         </div>
@@ -45,7 +45,7 @@ current: order
                             <span class="fs-5 fw-bold mx-3">1</span>
                         </div>
                     </li>
-                    <li class="row order-item-lg align-items-center">
+                    <li class="row checkout-item-lg align-items-center">
                         <div class="col-md-3">
                             <img src="./assets/images/popular-2.jpg" class="card-img-top" alt="popular-2">
                         </div>
@@ -61,7 +61,7 @@ current: order
                             <span class="fs-5 fw-bold mx-3">1</span>
                         </div>
                     </li>
-                    <li class="row order-item-lg align-items-center">
+                    <li class="row checkout-item-lg align-items-center">
                         <div class="col-md-3">
                             <img src="./assets/images/popular-3.jpg" class="card-img-top" alt="popular-3">
                         </div>
@@ -77,7 +77,7 @@ current: order
                             <span class="fs-5 fw-bold mx-3">1</span>
                         </div>
                     </li>
-                    <li class="row order-item align-items-center ">
+                    <li class="row checkout-item align-items-center ">
                         <div class="col-6">
                             <img src="./assets/images/popular-1.jpg" class="card-img-top" alt="popular-1">
                         </div>
@@ -92,7 +92,7 @@ current: order
                             </div>
                         </div>
                     </li>
-                    <li class="row order-item align-items-center ">
+                    <li class="row checkout-item align-items-center ">
                         <div class="col-6">
                             <img src="./assets/images/popular-2.jpg" class="card-img-top" alt="popular-2">
                         </div>
@@ -107,7 +107,7 @@ current: order
                             </div>
                         </div>
                     </li>
-                    <li class="row order-item align-items-center ">
+                    <li class="row checkout-item align-items-center ">
                         <div class="col-6">
                             <img src="./assets/images/popular-3.jpg" class="card-img-top" alt="popular-3">
                         </div>
@@ -125,24 +125,19 @@ current: order
                 </ul>
             </div>
             <div class="col-12 offset-lg-0 col-lg-4 d-flex flex-column order-1">
-                <h5 class="mb-4 mb-md-5">訂購人資訊</h5>
+                <h5 class="mb-4 mb-md-5">付款資訊</h5>
                 <form class="mb-13">
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@gmail.com"> 
+                        <label for="cardnumber">信用卡帳號</label>
+                        <input type="text" class="form-control" id="cardnumber" placeholder="Xxxx-xxxx-xxxx-xxxx"> 
                     </div>
                     <div class="form-group">
-                        <label for="name">姓名</label>
-                        <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+                        <label for="exp-date">有效日期</label>
+                        <input type="text" class="form-control" id="exp-date" placeholder="(MM/YY)">
                     </div>
                     <div class="form-group">
-                        <label for="tel">聯絡電話</label>
-                        <input type="tel" class="form-control" id="tel" placeholder="請輸入電話">
-                    </div>
-                    <div class="form-group">
-                        <label for="coupon">優惠碼</label>
-                        <input type="text" class="form-control" id="coupon" value="TG87526" placeholder="請輸入優惠碼">
-                        <p id="coupon-valid" class="form-text text-primary text-end">優惠碼已生效</p>
+                        <label for="cvc">安全碼</label>
+                        <input type="password" class="form-control" id="cvc" placeholder="***">
                     </div>
                 </form>
                 <div class="d-flex justify-content-between mb-2">
@@ -162,10 +157,10 @@ current: order
         <!-- link -->
         <div class="row">
             <div class="col-6 col-lg-2">
-                <a href="order-1.html" class="btn btn-outline-secondary w-100">返回</a>
+                <a href="checkout-2.html" class="btn btn-outline-secondary w-100">返回</a>
             </div>
             <div class="col-6 offset-lg-6 col-lg-4">
-                <a href="order-3.html" class="btn btn-secondary w-100">下一步</a>
+                <a href="checkout-4.html" class="btn btn-secondary w-100">下一步</a>
             </div>
         </div>
     </div>

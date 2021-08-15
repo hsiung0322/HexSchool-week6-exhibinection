@@ -1,9 +1,9 @@
-.order.wrap{
+.checkout.wrap{
     @include media-breakpoint-up(lg){
         height: calc(100vh - 5.5rem);
     }
 }
-.order_complete.wrap{
+.checkout_complete.wrap{
     @include media-breakpoint-up(lg){
         height: calc(100vh - 8.75rem);
     }
@@ -47,13 +47,13 @@
 .active.timeline-pointer p{
     font-weight: $font-weight-bold;
 }
-.order-item{
+.checkout-item{
     margin-bottom: 1.25rem;
     @include media-breakpoint-up(lg){
         display: none;
     }
 }
-.order-item-lg{
+.checkout-item-lg{
     display: none;
     margin-left: -1.87rem;
     margin-right: -1.87rem;
