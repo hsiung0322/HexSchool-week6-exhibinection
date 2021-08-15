@@ -16809,37 +16809,8 @@ svg {
   }
 }
 
-@media (min-width: 768px) {
-  .popular-img {
-    width: 33.333%;
-  }
-  .popular-img .card-img {
-    height: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .popular .card-body {
-    width: 50%;
-    padding: 2.5rem 0 2.5rem 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .popular .card-footer {
-    margin-left: 8.333%;
-    width: 8.333%;
-    background-color: #EFEFEF;
-    padding: 2.5rem 1.5rem 2.5rem 0;
-  }
-}
-
-.popular .card-text {
-  font-weight: 700;
-  margin-bottom: 1.25rem;
-}
-
 .detail-link {
+  display: block;
   overflow: hidden;
 }
 
@@ -16944,10 +16915,6 @@ svg {
   }
 }
 
-.card-img {
-  height: 256px;
-}
-
 .ticket-img {
   position: relative;
 }
@@ -16968,13 +16935,13 @@ svg {
 }
 
 @media (min-width: 992px) {
-  .order.wrap {
+  .checkout.wrap {
     height: calc(100vh - 5.5rem);
   }
 }
 
 @media (min-width: 992px) {
-  .order_complete.wrap {
+  .checkout_complete.wrap {
     height: calc(100vh - 8.75rem);
   }
 }
@@ -17030,17 +16997,17 @@ svg {
   font-weight: 700;
 }
 
-.order-item {
+.checkout-item {
   margin-bottom: 1.25rem;
 }
 
 @media (min-width: 992px) {
-  .order-item {
+  .checkout-item {
     display: none;
   }
 }
 
-.order-item-lg {
+.checkout-item-lg {
   display: none;
   margin-left: -1.87rem;
   margin-right: -1.87rem;
@@ -17048,7 +17015,7 @@ svg {
 }
 
 @media (min-width: 992px) {
-  .order-item-lg {
+  .checkout-item-lg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
