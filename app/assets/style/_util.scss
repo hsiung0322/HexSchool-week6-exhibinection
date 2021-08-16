@@ -28,6 +28,11 @@
         font-size: 1.25rem !important;
     }
 }
+@include media-breakpoint-up(lg) {
+    .fs-lg-5 {
+        font-size: 1.25rem !important;
+    }
+}
 
 @include media-breakpoint-up(md) { // 768px up
     .w-md-auto{

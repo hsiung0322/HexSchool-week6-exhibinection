@@ -14,8 +14,8 @@
     height: 256px;
 }
 
-.border-md-75{
-    @include media-breakpoint-up(md){
+.border-lg-75{
+    @include media-breakpoint-up(lg){
         position: relative;
         &::before{
             content: '';

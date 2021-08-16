@@ -7,18 +7,6 @@
     }
 }
 
-.detail-link{
-    display: block;
-    overflow: hidden;
-    &:hover{
-        .card-img{
-            transition: all .5s;
-            transform: scale(1.2);
-        }
-        
-    }
-    
-}
 .live-item{
     background-image: url(../images/live-bg.png);
     background-repeat: no-repeat;
@@ -40,12 +28,24 @@
 }
 .like .card-img{
     max-height: 350px;
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(lg){
         width: 350px;
         height: 350px;
     }
 }
 
+.detail-link{
+    display: block;
+    overflow: hidden;
+    &:hover{
+        .card-img{
+            transition: all .5s;
+            transform: scale(1.2);
+        }
+        
+    }
+    
+}
 .icon-link{
     cursor: pointer;
     transition: all .5s;

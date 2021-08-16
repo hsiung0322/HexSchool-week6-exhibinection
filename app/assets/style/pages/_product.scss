@@ -1,17 +1,13 @@
 .product-list{
     .card{
-    &-dark{
-        background-color: $primary;
-        color: $white;
-
+        &-dark{
+            background-color: $primary;
+            color: $white;
+        }
+        &-light{
+            background-color: $white;
+            color: $primary;
+        }
     }
-    &-light{
-        background-color: $white;
-        color: $primary;
-    }
-    &-body{
-        padding: 0 .9375rem;
-    }
-}
 }
 
