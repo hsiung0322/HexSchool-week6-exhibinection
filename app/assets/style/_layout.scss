@@ -125,3 +125,24 @@
         }
     }
 }
+.cart-scroller{
+    /* width */
+    ::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: $light; 
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: $secondary; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: $secondary; 
+    }
+}
