@@ -11,8 +11,8 @@ $(function () {
     slidesPerView: 1,
     spaceBetween: 20,
     breakpoints: {
-      // when window width is >= 768px
-      768: {
+      // when window width is >= 992px (lg)
+      992: {
         slidesPerView: 3,
         spaceBetween: 30
       }

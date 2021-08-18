@@ -16605,16 +16605,16 @@ svg {
   .fs-md-1 {
     font-size: 2.25rem !important;
   }
-}
-
-@media (min-width: 768px) {
   .fs-md-2 {
     font-size: 2rem !important;
   }
+  .fs-md-5 {
+    font-size: 1.25rem !important;
+  }
 }
 
-@media (min-width: 768px) {
-  .fs-md-5 {
+@media (min-width: 992px) {
+  .fs-lg-5 {
     font-size: 1.25rem !important;
   }
 }
@@ -16623,21 +16623,9 @@ svg {
   .w-md-auto {
     width: auto !important;
   }
-}
-
-@media (min-width: 768px) {
   .w-md-100 {
     width: 100% !important;
   }
-}
-
-.px-3\.75 {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-}
-
-.me-3\.75 {
-  margin-right: 0.9375rem;
 }
 
 .text-indent-cn {
@@ -16797,6 +16785,29 @@ svg {
   border-color: #E31277;
 }
 
+.cart-scroller {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.cart-scroller ::-webkit-scrollbar {
+  width: 2px;
+}
+
+.cart-scroller ::-webkit-scrollbar-track {
+  background: #EFEFEF;
+}
+
+.cart-scroller ::-webkit-scrollbar-thumb {
+  background: #E31277;
+}
+
+.cart-scroller ::-webkit-scrollbar-thumb:hover {
+  background: #E31277;
+}
+
 .title {
   font-size: 2rem;
   font-weight: 700;
@@ -16807,20 +16818,6 @@ svg {
   .title {
     margin-bottom: 1.5rem;
   }
-}
-
-.detail-link {
-  display: block;
-  overflow: hidden;
-}
-
-.detail-link:hover .card-img {
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .live-item {
@@ -16849,11 +16846,25 @@ svg {
   max-height: 350px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .like .card-img {
     width: 350px;
     height: 350px;
   }
+}
+
+.detail-link {
+  display: block;
+  overflow: hidden;
+}
+
+.detail-link:hover .card-img {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .icon-link {
@@ -16877,10 +16888,6 @@ svg {
   color: #630834;
 }
 
-.product-list .card-body {
-  padding: 0 .9375rem;
-}
-
 .ticket-type-link {
   display: block;
   color: #000;
@@ -16900,11 +16907,11 @@ svg {
   height: 256px;
 }
 
-@media (min-width: 768px) {
-  .border-md-75 {
+@media (min-width: 992px) {
+  .border-lg-75 {
     position: relative;
   }
-  .border-md-75::before {
+  .border-lg-75::before {
     content: '';
     position: absolute;
     top: 0;
