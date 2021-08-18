@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
     <!-- header -->
-    <header class="header border border-dark">
+    <header class="header border border-dark" data-aos="fade-up">
       <div class="container">
         <div class="row py-5 py-md-7">
           <!-- logo -->
@@ -228,7 +230,7 @@
 
 
     <!-- footer -->
-    <footer class="footer d-none">
+    <footer class="footer d-none" data-aos="fade-up">
       <div class="content">
         <div class="container h-100 d-flex align-items-end">
           <div class="w-100 w-md-auto">
@@ -282,9 +284,9 @@
                     <p class="fs-5 fw-bold">NT$350</p>
                   </div>
                 <div>
-                  <span class="material-icons">remove</span>
+                  <span class="material-icons d-none d-sm-block">remove</span>
                   <span class="fs-5 fw-bold mx-3">01</span>
-                  <span class="material-icons">add</span>
+                  <span class="material-icons d-none d-sm-block">add</span>
                 </div>
               </div>
             </div>
@@ -301,9 +303,9 @@
                     <p class="fs-5 fw-bold">NT$350</p>
                   </div>
                 <div>
-                  <span class="material-icons">remove</span>
+                  <span class="material-icons d-none d-sm-block">remove</span>
                   <span class="fs-5 fw-bold mx-3">01</span>
-                  <span class="material-icons">add</span>
+                  <span class="material-icons d-none d-sm-block">add</span>
                 </div>
               </div>
             </div>
@@ -320,9 +322,9 @@
                     <p class="fs-5 fw-bold">NT$350</p>
                   </div>
                 <div>
-                  <span class="material-icons">remove</span>
+                  <span class="material-icons d-none d-sm-block">remove</span>
                   <span class="fs-5 fw-bold mx-3">01</span>
-                  <span class="material-icons">add</span>
+                  <span class="material-icons d-none d-sm-block">add</span>
                 </div>
               </div>
             </div>
@@ -339,9 +341,9 @@
                     <p class="fs-5 fw-bold">NT$350</p>
                   </div>
                 <div>
-                  <span class="material-icons">remove</span>
+                  <span class="material-icons d-none d-sm-block">remove</span>
                   <span class="fs-5 fw-bold mx-3">01</span>
-                  <span class="material-icons">add</span>
+                  <span class="material-icons d-none d-sm-block">add</span>
                 </div>
               </div>
             </div>
@@ -358,9 +360,9 @@
                     <p class="fs-5 fw-bold">NT$350</p>
                   </div>
                 <div>
-                  <span class="material-icons">remove</span>
+                  <span class="material-icons d-none d-sm-block">remove</span>
                   <span class="fs-5 fw-bold mx-3">01</span>
-                  <span class="material-icons">add</span>
+                  <span class="material-icons d-none d-sm-block">add</span>
                 </div>
               </div>
             </div>
@@ -376,6 +378,30 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 800, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+});
+    </script>  
   </body>
 
 </html>
